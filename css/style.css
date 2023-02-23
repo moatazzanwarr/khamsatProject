@@ -1,0 +1,451 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    color: #222222;
+}
+
+
+/* Start Header */
+
+header{
+    background-color: #444;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 99999;
+}
+
+header nav .logo{
+    max-height: 36px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 18px;
+
+}
+
+header nav .icons{
+    transition: 0.3s ease;
+}
+
+header nav .icons:hover{
+    background-color: #aaa3a39d;
+}
+
+header nav-2 a i{
+    margin-left: 2px;
+    font-size: inherit;
+}
+
+
+.nav-2{
+    display: flex;
+    align-items: center;
+}
+
+/* End Header */
+
+/* Start bg-section */
+
+.bg-section{
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bg-section .content{
+    text-align: center;
+}
+
+.bg-section .content h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    
+}
+
+.bg-section .content h2{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.bg-section form{
+    background-color: #fff;
+    position: relative;
+    margin: 0;
+}
+
+.bg-section .content form input{
+    height: 70px;
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding-right: 30px;
+    direction: rtl;
+    transition: 0.15s;
+    font-weight: 400;
+    font-size: 18px;
+    color: #212529;
+}
+
+.bg-section .content form input:focus{
+    border: 1px solid #52b035;
+}
+
+.bg-section .content form button{
+    height: 53px;
+    width: 80px;
+    border: 0;
+    background-color: #52b035;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    transition: 0.3s ease;
+}
+
+.bg-section .content form button:hover{
+    background-color: #45962c;
+}
+
+/* End bg-section */
+
+/* Start Services Section */
+
+.services{
+    height: auto;
+}
+
+.services h1{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.services .content{
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.services .content .card{
+    text-decoration: none;
+    width: 320px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+    position: relative;
+}
+
+.services .content .card div{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 0;
+    transition: 0.3s ease;
+}
+
+.services .content .card div:hover{
+    opacity: 0.5;
+}
+
+.services .content .card span{
+    position: absolute;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+
+/* .services .content .card span{
+    position: absolute;
+} */
+
+.services .content .card-1{
+    background: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.services .content .card-2{
+    background: url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.services .content .card-3{
+    background: url(../images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.services .content .card-4{
+    background: url(../images/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.services .content .card-5{
+    background: url(../images/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.services .content .card-6{
+    background: url(../images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.services .content .card-7{
+    background: url(../images/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.services .content .card-8{
+    background: url(../images/8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/* End Services Section */
+
+/* Start Work Section */
+
+.work{
+    margin: 120px 0;
+}
+
+.work a{
+    text-decoration: none;
+    color: #212529;
+}
+
+.work .head{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.work .head h2{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.work .head a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #45962c;
+    color: #45962c;
+    font-weight: 550px;
+    transition: 0.3s ease;
+
+}
+
+.work .head a:hover{
+    background-color: #45962c;
+    color: #fff;
+}
+
+.work .cards{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+
+}
+
+.work .cards .card{
+    width: 320px;
+    direction: rtl;
+}
+
+
+.work .card img{
+    width: 100%;
+}
+
+.work .cards .card h4{
+    margin: 10px 0;
+}
+
+.work .cards .card h4 a{
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.work .cards .card h4 a:hover{
+    color: #52b035;
+}
+
+.work .cards .stars{
+    margin: 10px 0;
+}
+
+.work .cards .stars i{
+    color: #fa9747;
+}
+
+.work .cards .salary span{
+    font-weight: 600;
+}
+
+
+/* End Work Section */
+
+
+/* Start Footer */
+
+.about{
+    direction: rtl;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.about h5{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about ul li{
+    list-style: none;
+    line-height: 25px;
+}
+
+.about a{
+    text-decoration: none;
+    color: #45962c;
+}
+
+.about .social a{
+    display: inline-block;
+    padding: 7px 8px;
+}
+
+.about .social .face{
+    background: #0d6efd;
+    margin-left: 3px;
+}
+
+.about .social .twet{
+    background: #0dcaf0;
+}
+
+.about .paying{
+    margin-top: 20px;
+}
+
+.about .paying img{
+    margin: 0 3px;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 70px 0;
+}
+
+.bar a{
+    text-decoration: none;
+    color: #212529;
+    margin: 0 15px;
+
+}
+
+.hsoub-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.hsoub-logo .logo{
+    display: inline-block;
+    width: 150px;
+}
+
+footer .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding: 60px 150px;
+}
+
+footer .cards .card{
+    direction: rtl;
+    width: 16%;
+}
+
+footer .cards .card h2{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 7px 0;
+}
+
+footer .cards .card p{
+    font-size:12px ;
+    font-weight: 400;
+}
+
+footer .cards a{
+    text-decoration: none;
+    color: #212529;;
+}
+
+footer .cards .row{
+    width: 50%;
+    display: flex;
+    direction: rtl;
+    position: relative;
+    /* left: 50px; */
+
+}
+
+footer .cards .row .card{
+    width: 33%;
+    /* margin:auto; */
+}
+
+/* End Footer */
