@@ -22,6 +22,7 @@ header{
     width: 100%;
     padding: 0 50px;
     z-index: 99999;
+    overflow: hidden;
 }
 
 header nav .logo{
@@ -55,7 +56,57 @@ header nav-2 a i{
     align-items: center;
 }
 
+.fa-bars{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
 /* End Header */
+
+/* Stert Side menu */
+.sidemenue{
+    width: 0px;
+    height: calc(100vh - 60px);
+    position: fixed;
+    right: 0;
+    top: 60px;
+    background-color: #444;
+    text-align: center;
+    z-index: 99;
+    transition: 0.3s ease;
+
+}
+
+.sidemenue div{
+    position: relative;
+    height: 80px;
+    z-index: 9999;
+}
+
+.sidemenue h2 a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.fa-xmark{
+    position: absolute;
+     top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+} 
+
+.fa-xmark:hover{
+    background-color: #aaa3a39d;
+}
+/* End Side menu */
 
 /* Start bg-section */
 
